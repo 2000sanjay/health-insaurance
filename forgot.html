@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+#regForm {
+  
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+
+h1 {
+  text-align: center;  
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+
+</style>
+<body>
+
+ 
+<form id="regForm" action="/action_page.php">
+  <h1>forgot password</h1>
+  <!-- One "tab" for each step in the form: -->
+  <div class="tab">username:
+    <p><input placeholder="enter your email or phone number.."  name="uname"></p>
+     </div>
+  <div style="overflow:auto;">
+    <div style="float:right;">
+     <button type="submit" onclick="myalert()" value="Submit">Submit</button>
+   </div>
+  </div>
+  </form>
+  <script>
+function myalert() {
+  alert("check your email!");
+}
+</script>
+
+  </body>
+  </html>
